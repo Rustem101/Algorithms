@@ -1,3 +1,8 @@
+/*
+Heavy-light decomposition
+Solution based on problem: https://www.spoj.com/problems/QTREE/
+*/
+
 #pragma GCC optimize("Ofast")
 #pragma GCC target("sse,sse2,sse3,sse3,sse4,popcnt,abm,mmx")
 #include <bits/stdc++.h>
@@ -129,7 +134,6 @@ inline int go_up(int u, int v) {
 }
 main() {
     file("console");
-    //ios;
     scanf("%d", &te);
     while (te--) {
         int n;
