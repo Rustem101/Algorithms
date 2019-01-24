@@ -1,3 +1,6 @@
+/**
+Solution based on this problem: https://www.spoj.com/problems/DISUBSTR/
+*/
 #pragma GCC optimize("Ofast")
 #pragma GCC target("sse,sse2,sse3,sse3,sse4,popcnt,abm,mmx")
 #include <bits/stdc++.h>
