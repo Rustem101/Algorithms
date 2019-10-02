@@ -1,3 +1,6 @@
+/**
+find problems on informatics.mccme.ru
+*/
 //#pragma GCC optimize("Ofast")
 //#pragma GCC target("avx,avx2,fma")
 #include <bits/stdc++.h>
