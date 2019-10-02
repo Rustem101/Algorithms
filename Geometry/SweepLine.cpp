@@ -1,8 +1,8 @@
 /**
 timus 1469
 */
-#pragma GCC optimize("Ofast")
-#pragma GCC target("sse,sse2,sse3,sse3,sse4,popcnt,abm,mmx")
+//#pragma GCC optimize("Ofast")
+//#pragma GCC target("sse,sse2,sse3,sse3,sse4,popcnt,abm,mmx")
 #include <bits/stdc++.h>
 #include <ext/pb_ds/assoc_container.hpp>
 #include <ext/pb_ds/tree_policy.hpp>
