@@ -124,9 +124,9 @@ void split(pnode t, pnode &l, pnode &r, int k) {
     push(t);
     if (!t) l = r = NULL;
     else {
-        int x = get_sz(t->l) + 1;
-        if (x <= k) {
-            split(t->r, t->r, r, k - x);
+        int sz = get_sz(t->l) + 1;
+        if (sz <= k) {
+            split(t->r, t->r, r, k - sz);
             l = t;
         } else {
             split(t->l, l, t->l, k);
