@@ -1,6 +1,7 @@
 /*
 Heavy-light decomposition
 Solution based on problem: https://www.spoj.com/problems/QTREE/
+read more on Anudeep's blog.
 */
 
 #pragma GCC optimize("Ofast")
