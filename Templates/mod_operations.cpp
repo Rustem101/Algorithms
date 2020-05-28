@@ -78,6 +78,9 @@ int power(int a, int b) {
   }
   return res;
 }
+int c(int a, int b) {
+  return f[a] * rf[b] % mod * rf[a - b] % mod;
+}
 main() {
   file("threesum");
   ios;
@@ -85,6 +88,10 @@ main() {
   for (int i = 2; i < mod; ++i) {
     inv[i] = (mod - (mod / i) * inv[mod % i] % mod) % mod;
   }
+  f[0] = 1;
+  fo(i, 1, n, 1) f[i] = f[i - 1] * i % mod;
+  rf[n] = power(f[n], mod - 2);
+  foo(i, n - 1, 0, 1) rf[i] = (i + 1) * rf[i + 1] % mod;
   return 0;
 }
 /**
