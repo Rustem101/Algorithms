@@ -65,6 +65,12 @@ void upd(int v, int l, int r, int pos, int val) {
   pos <= md ? upd(v + v, l, md, pos, val) : upd(v + v + 1, md + 1, r, pos, val);
   t[v] = max(t[v + v], t[v + v + 1]);
 }
+int get(int v, int l, int r, int left, int right) {
+  if (left <= l and r <= right) return t[v];  
+  if (md < left) return get(v + v + 1, md + 1, r, left, right);
+  if (md + 1 > right) return get(v + v, l, md, left, right);
+  return min(get(v + v, l, md, left, right), get(v + v + 1, md + 1, r, left, right));
+}
 main() {
   file("threesum");
   ios;
